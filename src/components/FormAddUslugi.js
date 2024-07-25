@@ -1,11 +1,15 @@
 import {v4 as uuidv4} from 'uuid'
-import {useState} from 'react'
+import {useState, useRef} from 'react'
+
 
 
 const FormAddUslugi = ({addUslugi}) => {
 
     const [newUsluga, setNewUsluga] = useState('')
     const [newPrice, setNewPrice] = useState('')
+    const refTypeAuto = useRef()
+
+
 
     const newUslugaHandler = (e) => {
         setNewUsluga(e.target.value)
@@ -17,10 +21,16 @@ const FormAddUslugi = ({addUslugi}) => {
 
     const addUsluga = (event) => {
         event.preventDefault();
+        if (!newUsluga.trim()) return
+        if (!newPrice.trim()) return
+
+        // console.log(myRef.current.value)
+
         const usluga = {
             id: uuidv4(),
+            type: refTypeAuto.current.value,
             title: newUsluga,
-            price: newPrice,
+            price: +newPrice,
             isDelete: false
         }
 
@@ -31,11 +41,16 @@ const FormAddUslugi = ({addUslugi}) => {
     }
 
     return <>
-        <h1>Add uslugi</h1>
+        <h1>Добавить услугу</h1>
         <form onSubmit={addUsluga}>
-            <input name='usluga' placeholder='Usluga' value={newUsluga} onChange={newUslugaHandler}/>
-            <input name='price' placeholder='Price' value={newPrice} onChange={newPriceHandler}/>
-            <button type='submit'>Add</button>
+            <input name='usluga' placeholder='Услуга' value={newUsluga} onChange={newUslugaHandler} type='text'/>
+            <input name='price' placeholder='Цена' value={newPrice} onChange={newPriceHandler} type='number' min={0}/>
+            <select name='type_auto' ref={refTypeAuto}>
+                <option value='type_auto_1'>Седан</option>
+                <option value='type_auto_2'>Внедорожник</option>
+                <option value='type_auto_3'>Коммерческий</option>
+            </select>
+            <button type='submit'>Добавить</button>
         </form>
     </>
 }
