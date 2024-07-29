@@ -12,14 +12,14 @@ const FilterUslug = ({bigFilterUslug}) => {
         bigFilterUslug(filterUslug)
     }
 
-    return <>
-        <form className={styles.filterForm}>
+    return <div className={styles.filterForm}>
+        <form>
             <input placeholder="Filter Uslug"
                    type="text"
                    value={filterUslug}
                    onChange={e => changeFilterUslug(e.target.value)}/>
             <MdDeleteForever onClick={() => changeFilterUslug('')}/>
         </form>
-    </>
+    </div>
 }
 export default FilterUslug;

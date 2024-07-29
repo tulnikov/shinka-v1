@@ -3,7 +3,6 @@ import {useState, useRef} from 'react'
 import styles from './FormAddUslugi.module.css';
 
 
-
 const FormAddUslugi = ({addUslugi}) => {
 
     const [newUsluga, setNewUsluga] = useState('')
@@ -41,17 +40,25 @@ const FormAddUslugi = ({addUslugi}) => {
     }
 
     return <div className={styles.myform}>
-        <h1>Добавить услугу</h1>
-        <form onSubmit={addUsluga}>
-            <input name='usluga' placeholder='Услуга' value={newUsluga} onChange={newUslugaHandler} type='text'/>
-            <input name='price' placeholder='Цена' value={newPrice} onChange={newPriceHandler} type='number' min={0}/>
-            <select name='type_auto' ref={refTypeAuto}>
-                <option value='type_auto_1'>Седан</option>
-                <option value='type_auto_2'>Внедорожник</option>
-                <option value='type_auto_3'>Коммерческий</option>
-            </select>
-            <button type='submit'>Добавить</button>
-        </form>
+        <div>
+            <h1>Добавить услугу</h1>
+        </div>
+        <div>
+            <form onSubmit={addUsluga}>
+                <input name='usluga' placeholder='Услуга' value={newUsluga} onChange={newUslugaHandler} type='text'/>
+                <input name='price' placeholder='Цена' value={newPrice} onChange={newPriceHandler} type='number'
+                       min={0}/>
+                <select name='type_auto' ref={refTypeAuto}>
+                    <option value='type_auto_1'>Седан</option>
+                    <option value='type_auto_2'>Внедорожник</option>
+                    <option value='type_auto_3'>Коммерческий</option>
+                </select>
+                <select name='diameter'>
+                    <option value={13}>13</option>
+                </select>
+                <button type='submit'>Добавить</button>
+            </form>
+        </div>
     </div>
 }
 

@@ -1,9 +1,9 @@
-import './App.css';
+import bigData from "./dataPrice";
+
 
 import {useState} from 'react'
 import FormAddUslugi from './components/FormAddUslugi'
 import ListUslugi from "./components/ListUslugi";
-import bigData from "./dataPrice";
 import FilterUslug from "./components/FilterUslug";
 
 

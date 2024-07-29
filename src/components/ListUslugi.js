@@ -7,7 +7,7 @@ const ListUslugi = ({uslugi, delUsluga}) => {
         'type_auto_2': 'Внедорожник',
         'type_auto_3': 'Коммерческий',
     }
-    return <>
+    return <div className={styles.listUslugi}>
         <table className={styles.table}>
             <thead>
             <tr>
@@ -33,6 +33,6 @@ const ListUslugi = ({uslugi, delUsluga}) => {
             )}
             </tbody>
         </table>
-    </>
+    </div>
 }
 export default ListUslugi;
