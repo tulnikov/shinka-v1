@@ -1,5 +1,6 @@
 import {v4 as uuidv4} from 'uuid'
 import {useState, useRef} from 'react'
+import styles from './FormAddUslugi.module.css';
 
 
 
@@ -8,7 +9,6 @@ const FormAddUslugi = ({addUslugi}) => {
     const [newUsluga, setNewUsluga] = useState('')
     const [newPrice, setNewPrice] = useState('')
     const refTypeAuto = useRef()
-
 
 
     const newUslugaHandler = (e) => {
@@ -40,7 +40,7 @@ const FormAddUslugi = ({addUslugi}) => {
         setNewPrice('')
     }
 
-    return <>
+    return <div className={styles.myform}>
         <h1>Добавить услугу</h1>
         <form onSubmit={addUsluga}>
             <input name='usluga' placeholder='Услуга' value={newUsluga} onChange={newUslugaHandler} type='text'/>
@@ -52,7 +52,7 @@ const FormAddUslugi = ({addUslugi}) => {
             </select>
             <button type='submit'>Добавить</button>
         </form>
-    </>
+    </div>
 }
 
 export default FormAddUslugi;

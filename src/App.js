@@ -4,6 +4,8 @@ import {useState} from 'react'
 import FormAddUslugi from './components/FormAddUslugi'
 import ListUslugi from "./components/ListUslugi";
 import bigData from "./dataPrice";
+import FilterUslug from "./components/FilterUslug";
+
 
 function App() {
 
@@ -20,10 +22,16 @@ function App() {
         setUslugi(newArray)
     }
 
+    const filterUslugHandler = (text) => {
+        const newUslugi = bigData.filter(usluga => usluga.title.toLowerCase().includes(text.toLowerCase()))
+
+        setUslugi(newUslugi)
+    }
+
     return (
         <>
-            <h1>Шиномонтаж Баланс</h1>
             <FormAddUslugi addUslugi={addUslugiHandler}/>
+            <FilterUslug bigFilterUslug={filterUslugHandler}/>
             <ListUslugi uslugi={uslugi} delUsluga={delUslugaHandler}/>
         </>
     );

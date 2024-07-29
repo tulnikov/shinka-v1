@@ -8,9 +8,10 @@ const ListUslugi = ({uslugi, delUsluga}) => {
         'type_auto_3': 'Коммерческий',
     }
     return <>
-        <table>
+        <table className={styles.table}>
             <thead>
             <tr>
+                <td>#</td>
                 <td>Услуга</td>
                 <td>Тип авто</td>
                 <td>Диаметр</td>
@@ -19,8 +20,9 @@ const ListUslugi = ({uslugi, delUsluga}) => {
             </tr>
             </thead>
             <tbody>
-            {uslugi.map(item => (
-                    <tr>
+            {uslugi.map((item) => (
+                    <tr key={item.id} className={styles.row}>
+                        <td>{item.id}</td>
                         <td>{item.title}</td>
                         <td>{typeAuto[item.type]}</td>
                         <td>{item.diameter}</td>

@@ -256,7 +256,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 32,
+        id: 33,
         type: 'type_auto_1',
         title: 'Вулканизаци (за прокол)',
         diameter: 14,
@@ -264,7 +264,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 32,
+        id: 34,
         type: 'type_auto_1',
         title: 'Замена вентиля (черный)',
         diameter: 14,
@@ -272,7 +272,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 32,
+        id: 35,
         type: 'type_auto_1',
         title: 'Замена вентиля (хром)',
         diameter: 14,
@@ -280,7 +280,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 32,
+        id: 36,
         type: 'type_auto_1',
         title: 'Герметизация бортов (1 колесо)',
         diameter: 14,
@@ -288,7 +288,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 33,
+        id: 37,
         type: 'type_auto_1',
         title: 'Ремонт камеры (1 повреждение)',
         diameter: 14,
@@ -296,7 +296,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 34,
+        id: 38,
         type: 'type_auto_1',
         title: 'Ремонт заплаткой (1 повреждение)',
         diameter: 14,
@@ -304,7 +304,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 35,
+        id: 39,
         type: 'type_auto_1',
         title: 'Ремонт грибком (1 повреждение)',
         diameter: 14,
@@ -312,7 +312,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 36,
+        id: 40,
         type: 'type_auto_1',
         title: 'Ремонт кордовой заплаткой (1 повреждение)',
         diameter: 14,
@@ -320,7 +320,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 37,
+        id: 41,
         type: 'type_auto_1',
         title: 'Ремонт жгутом (1 повреждение)',
         diameter: 14,
@@ -328,7 +328,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 38,
+        id: 42,
         type: 'type_auto_1',
         title: 'Подкачка (проверка давления)',
         diameter: 14,
@@ -336,7 +336,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 39,
+        id: 43,
         type: 'type_auto_1',
         title: 'Очистка диска от грязи щеткой',
         diameter: 14,
@@ -344,7 +344,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 40,
+        id: 44,
         type: 'type_auto_1',
         title: 'Упаковка шин в пакеты',
         diameter: 14,
@@ -352,7 +352,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 41,
+        id: 45,
         type: 'type_auto_1',
         title: 'Установка камеры',
         diameter: 14,
@@ -360,7 +360,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 42,
+        id: 46,
         type: 'type_auto_1',
         title: 'Смазка ступиц медной смазкой',
         diameter: 14,
@@ -368,7 +368,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 43,
+        id: 47,
         type: 'type_auto_1',
         title: 'Глубокая шлифовка бортов диска',
         diameter: 14,
@@ -376,7 +376,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 44,
+        id: 48,
         type: 'type_auto_1',
         title: 'Установка датчика давления',
         diameter: 14,
@@ -384,7 +384,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 45,
+        id: 49,
         type: 'type_auto_1',
         title: 'Сбор или разбор колеса',
         diameter: 14,
@@ -392,7 +392,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 46,
+        id: 50,
         type: 'type_auto_1',
         title: 'Горячая варка',
         diameter: 14,
@@ -400,7 +400,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 47,
+        id: 51,
         type: 'type_auto_1',
         title: 'Правка стальных дисков',
         diameter: 14,
@@ -408,7 +408,7 @@ const bigData = [
         isDelete: false
     },
     {
-        id: 48,
+        id: 52,
         type: 'type_auto_1',
         title: 'Правка литых дисков',
         diameter: 14,
